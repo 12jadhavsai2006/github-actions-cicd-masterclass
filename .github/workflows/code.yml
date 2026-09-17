@@ -1,0 +1,15 @@
+#name
+name: code
+#when
+on: 
+   push:
+#jobs
+   jobs:
+       code-checkout:
+          runs-on: ubuntu-latest
+          #steps
+          steps:
+           - name: Clone the code
+          users: actions/checkout@v7
+
+          
